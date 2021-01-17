@@ -6,7 +6,7 @@
 /*   By: msafflow <msafflow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 17:40:14 by msafflow          #+#    #+#             */
-/*   Updated: 2021/01/17 18:50:50 by msafflow         ###   ########.fr       */
+/*   Updated: 2021/01/17 20:04:50 by msafflow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Zombie* randomChump(ZombieEvent zombie_creator) {
 	Zombie* ptr;
 
 	srand(time(0));
-	string names[10] = { "Andrew", "Pasha", "Sasha", "Altana", "Dasha",
+	string names[10] = {"Andrew", "Pasha", "Sasha", "Altana", "Dasha",
 						"Jenya", "Leha", "Tanya", "Vika", "Nastya"};
 	ptr = zombie_creator.newZombie(names[rand() % 10]);
 	ptr->announce();
